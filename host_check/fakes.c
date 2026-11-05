@@ -25,6 +25,8 @@ feeder_status_e g_feeder = FEEDER_IDLE;
 int            g_trigger_release_cnt = 0;        /* 撒放器释放请求次数 */
 int            g_zero_req_cnt[3];
 int            g_tone_cnt[BUZZER_TONE_NUM];
+int            g_link_sync_cnt = 0;
+uint8_t        g_link_sync_shot = 0U;
 
 void Fakes_Reset(void)
 {
@@ -52,6 +54,8 @@ void Fakes_Reset(void)
     g_trigger_release_cnt = 0;
     memset(g_zero_req_cnt, 0, sizeof(g_zero_req_cnt));
     memset(g_tone_cnt, 0, sizeof(g_tone_cnt));
+    g_link_sync_cnt = 0;
+    g_link_sync_shot = 0U;
 }
 
 /* ---------- 遥控 ---------- */
@@ -176,4 +180,7 @@ fire_gate_result_t Fire_Gate_Check(bool mode_ok, bool confirm_ok)
     return r;
 }
 bool Log_Event(log_event_e code, int32_t arg) { (void)code; (void)arg; return false; }
+
+/* ---------- 2.4G ---------- */
+void Link24g_Notify_Shot(uint8_t shot_no) { g_link_sync_cnt++; g_link_sync_shot = shot_no; }
 void Buzzer_Play(buzzer_tone_e tone) { if (tone < BUZZER_TONE_NUM) g_tone_cnt[tone]++; }

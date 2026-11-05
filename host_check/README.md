@@ -29,6 +29,16 @@ gcc -std=c99 -Wall -I host_check/stubs -I Application/ConfigLayer -I Application
 .\host_check\check_axis.exe
 ```
 
+2.4G 帧协议（`link24g_frame.h`）的检查：CRC、往返编解码、拆包粘包、重同步、错误帧丢弃。
+
+```powershell
+gcc -std=c99 -Wall -I Application/ProtocolLayer host_check/check_link24g.c -o host_check/check_link24g.exe
+```
+
+```powershell
+.\host_check\check_link24g.exe
+```
+
 退出码为 0 表示全部通过。生成的 exe 是临时文件，用完后删除。
 
 ## 维护

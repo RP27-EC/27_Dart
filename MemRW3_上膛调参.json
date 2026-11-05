@@ -1,0 +1,3049 @@
+{
+  "elf_path": "G:\\STM32_ALL\\RM\\code\\RP27_Dart\\MDK-ARM\\My_C\\My_C.axf",
+  "probe_chip": "STM32F407IG",
+  "probe_protocol": "SWD",
+  "probe_speed_khz": 1000,
+  "variables": [
+    {
+      "name": "g_dart_tune.enable",
+      "address": 536870960,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "g_dart_tune.axis",
+      "address": 536870961,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "g_dart_tune.mode",
+      "address": 536870962,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "g_dart_tune.speed_rpm",
+      "address": 536870964,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "g_dart_tune.pos_target",
+      "address": 536870968,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "g_dart_tune.pos_speed_limit",
+      "address": 536870972,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "g_dart_tune.seq",
+      "address": 536870976,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "g_dart_tune.active",
+      "address": 536870980,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "g_dart_tune.deny",
+      "address": 536870984,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "s_fsm.mode",
+      "address": 536873888,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_fsm.step",
+      "address": 536873889,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_fsm.energy",
+      "address": 536873898,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_fsm.shot_no",
+      "address": 536873896,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_fsm.output_enabled",
+      "address": 536873900,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_fsm.retreat_active",
+      "address": 536873917,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_fsm.unload_step",
+      "address": 536873924,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_fsm.last_fire_deny",
+      "address": 536873904,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "s_fsm.last_start_deny",
+      "address": 536873908,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "s_fsm.last_unload_deny",
+      "address": 536873932,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "s_fault_mask",
+      "address": 536870944,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "s_trigger_state",
+      "address": 536871000,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_yaw_axis.status",
+      "address": 536874692,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_yaw_axis.err",
+      "address": 536874693,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_yaw_axis.zeroed",
+      "address": 536874694,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_yaw_axis.pos",
+      "address": 536874700,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.speed",
+      "address": 536874704,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.output",
+      "address": 536874736,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.target",
+      "address": 536874708,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.tune_speed",
+      "address": 536874728,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.speed_limit",
+      "address": 536874732,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.move_timeout",
+      "address": 536874724,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.home_pos",
+      "address": 536874712,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_min",
+      "address": 536874716,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_max",
+      "address": 536874720,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.spd_pid.kp",
+      "address": 536874588,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.spd_pid.ki",
+      "address": 536874592,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.spd_pid.kd",
+      "address": 536874596,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.spd_pid.integral_max",
+      "address": 536874624,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.spd_pid.out_max",
+      "address": 536874628,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.spd_pid.target",
+      "address": 536874572,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.spd_pid.measure",
+      "address": 536874576,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.spd_pid.err",
+      "address": 536874580,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_pid.kp",
+      "address": 536874528,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_pid.ki",
+      "address": 536874532,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_pid.kd",
+      "address": 536874536,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_pid.integral_max",
+      "address": 536874564,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_pid.out_max",
+      "address": 536874568,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_pid.target",
+      "address": 536874512,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_pid.measure",
+      "address": 536874516,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.pos_pid.err",
+      "address": 536874520,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.zero_pid.kp",
+      "address": 536874648,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.zero_pid.ki",
+      "address": 536874652,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.zero_pid.kd",
+      "address": 536874656,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.zero_pid.integral_max",
+      "address": 536874684,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.zero_pid.out_max",
+      "address": 536874688,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.zero_pid.target",
+      "address": 536874632,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.zero_pid.measure",
+      "address": 536874636,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_yaw_axis.zero_pid.err",
+      "address": 536874640,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.status",
+      "address": 536874440,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_tension_axis.err",
+      "address": 536874441,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_tension_axis.zeroed",
+      "address": 536874442,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_tension_axis.pos",
+      "address": 536874448,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.speed",
+      "address": 536874452,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.output",
+      "address": 536874484,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.target",
+      "address": 536874456,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.tune_speed",
+      "address": 536874476,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.speed_limit",
+      "address": 536874480,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.move_timeout",
+      "address": 536874472,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.home_pos",
+      "address": 536874460,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_min",
+      "address": 536874464,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_max",
+      "address": 536874468,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.spd_pid.kp",
+      "address": 536874336,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.spd_pid.ki",
+      "address": 536874340,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.spd_pid.kd",
+      "address": 536874344,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.spd_pid.integral_max",
+      "address": 536874372,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.spd_pid.out_max",
+      "address": 536874376,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.spd_pid.target",
+      "address": 536874320,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.spd_pid.measure",
+      "address": 536874324,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.spd_pid.err",
+      "address": 536874328,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_pid.kp",
+      "address": 536874276,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_pid.ki",
+      "address": 536874280,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_pid.kd",
+      "address": 536874284,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_pid.integral_max",
+      "address": 536874312,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_pid.out_max",
+      "address": 536874316,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_pid.target",
+      "address": 536874260,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_pid.measure",
+      "address": 536874264,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.pos_pid.err",
+      "address": 536874268,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.zero_pid.kp",
+      "address": 536874396,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.zero_pid.ki",
+      "address": 536874400,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.zero_pid.kd",
+      "address": 536874404,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.zero_pid.integral_max",
+      "address": 536874432,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.zero_pid.out_max",
+      "address": 536874436,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.zero_pid.target",
+      "address": 536874380,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.zero_pid.measure",
+      "address": 536874384,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_tension_axis.zero_pid.err",
+      "address": 536874388,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.status",
+      "address": 536874188,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_loader_axis.err",
+      "address": 536874189,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_loader_axis.zeroed",
+      "address": 536874190,
+      "ext_type": "U8",
+      "size": 1
+    },
+    {
+      "name": "s_loader_axis.pos",
+      "address": 536874196,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.speed",
+      "address": 536874200,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.output",
+      "address": 536874232,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.target",
+      "address": 536874204,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.tune_speed",
+      "address": 536874224,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.speed_limit",
+      "address": 536874228,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.move_timeout",
+      "address": 536874220,
+      "ext_type": "U32",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.home_pos",
+      "address": 536874208,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_min",
+      "address": 536874212,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_max",
+      "address": 536874216,
+      "ext_type": "I32",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.spd_pid.kp",
+      "address": 536874084,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.spd_pid.ki",
+      "address": 536874088,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.spd_pid.kd",
+      "address": 536874092,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.spd_pid.integral_max",
+      "address": 536874120,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.spd_pid.out_max",
+      "address": 536874124,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.spd_pid.target",
+      "address": 536874068,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.spd_pid.measure",
+      "address": 536874072,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.spd_pid.err",
+      "address": 536874076,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_pid.kp",
+      "address": 536874024,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_pid.ki",
+      "address": 536874028,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_pid.kd",
+      "address": 536874032,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_pid.integral_max",
+      "address": 536874060,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_pid.out_max",
+      "address": 536874064,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_pid.target",
+      "address": 536874008,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_pid.measure",
+      "address": 536874012,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.pos_pid.err",
+      "address": 536874016,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.zero_pid.kp",
+      "address": 536874144,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.zero_pid.ki",
+      "address": 536874148,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.zero_pid.kd",
+      "address": 536874152,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.zero_pid.integral_max",
+      "address": 536874180,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.zero_pid.out_max",
+      "address": 536874184,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.zero_pid.target",
+      "address": 536874128,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.zero_pid.measure",
+      "address": 536874132,
+      "ext_type": "Float",
+      "size": 4
+    },
+    {
+      "name": "s_loader_axis.zero_pid.err",
+      "address": 536874136,
+      "ext_type": "Float",
+      "size": 4
+    }
+  ],
+  "plugins": [
+    {
+      "plugin_id": "chart",
+      "payload": {
+        "legends": [
+          {
+            "variable_name": "s_loader_axis.spd_pid.target",
+            "variable_address": 536874068,
+            "variable_type": "Float",
+            "variable_size": 4,
+            "curve_name": "上膛 速度目标 rpm",
+            "color": [
+              255,
+              100,
+              120,
+              255
+            ],
+            "visible": true,
+            "buffer_size": 0,
+            "retain_all": true
+          },
+          {
+            "variable_name": "s_loader_axis.speed",
+            "variable_address": 536874200,
+            "variable_type": "Float",
+            "variable_size": 4,
+            "curve_name": "上膛 实际速度 rpm",
+            "color": [
+              80,
+              190,
+              255,
+              255
+            ],
+            "visible": true,
+            "buffer_size": 0,
+            "retain_all": true
+          },
+          {
+            "variable_name": "s_loader_axis.output",
+            "variable_address": 536874232,
+            "variable_type": "Float",
+            "variable_size": 4,
+            "curve_name": "上膛 电流指令 raw（与转速量纲不同）",
+            "color": [
+              255,
+              190,
+              60,
+              255
+            ],
+            "visible": false,
+            "buffer_size": 0,
+            "retain_all": true
+          },
+          {
+            "variable_name": "s_loader_axis.target",
+            "variable_address": 536874204,
+            "variable_type": "I32",
+            "variable_size": 4,
+            "curve_name": "上膛 位置目标 count",
+            "color": [
+              180,
+              110,
+              255,
+              255
+            ],
+            "visible": false,
+            "buffer_size": 0,
+            "retain_all": true
+          },
+          {
+            "variable_name": "s_loader_axis.pos",
+            "variable_address": 536874196,
+            "variable_type": "I32",
+            "variable_size": 4,
+            "curve_name": "上膛 实际位置 count",
+            "color": [
+              70,
+              210,
+              150,
+              255
+            ],
+            "visible": false,
+            "buffer_size": 0,
+            "retain_all": true
+          }
+        ],
+        "show_sparse_points": false,
+        "sparse_point_threshold": 32
+      }
+    },
+    {
+      "plugin_id": "table",
+      "payload": {
+        "roots": [
+          {
+            "label": "01 调参控制 g_dart_tune（只在手动模式生效）",
+            "source_name": "g_dart_tune",
+            "source_address": 536870960,
+            "expanded": true,
+            "variable": null,
+            "children": [
+              {
+                "label": "enable ｜ 可写：0退出，1启用；最后再启用",
+                "source_name": "g_dart_tune.enable",
+                "source_address": 536870960,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.enable",
+                  "variable_address": 536870960,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "axis ｜ 可写：0上膛，1变力，2Yaw",
+                "source_name": "g_dart_tune.axis",
+                "source_address": 536870961,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.axis",
+                  "variable_address": 536870961,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "mode ｜ 可写：0关闭，1速度内环，2位置阶跃",
+                "source_name": "g_dart_tune.mode",
+                "source_address": 536870962,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.mode",
+                  "variable_address": 536870962,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "speed_rpm ｜ 可写：速度阶跃目标 rpm，逻辑方向",
+                "source_name": "g_dart_tune.speed_rpm",
+                "source_address": 536870964,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.speed_rpm",
+                  "variable_address": 536870964,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "pos_target ｜ 可写：位置阶跃目标 count，相对零点",
+                "source_name": "g_dart_tune.pos_target",
+                "source_address": 536870968,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.pos_target",
+                  "variable_address": 536870968,
+                  "variable_type": "I32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "pos_speed_limit ｜ 可写：位置运动限速 rpm；≤0用默认",
+                "source_name": "g_dart_tune.pos_speed_limit",
+                "source_address": 536870972,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.pos_speed_limit",
+                  "variable_address": 536870972,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "seq ｜ 可写：位置模式启用后改变此值才发起运动",
+                "source_name": "g_dart_tune.seq",
+                "source_address": 536870976,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.seq",
+                  "variable_address": 536870976,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "active ｜ 只读：1已接管，0未接管",
+                "source_name": "g_dart_tune.active",
+                "source_address": 536870980,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.active",
+                  "variable_address": 536870980,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "deny ｜ 只读拒绝位：1非手动/2轴错/4未找零/8储能/16拒绝",
+                "source_name": "g_dart_tune.deny",
+                "source_address": 536870984,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "g_dart_tune.deny",
+                  "variable_address": 536870984,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "02 整机状态 s_fsm（只观察，勿写入）",
+            "source_name": "s_fsm",
+            "source_address": 536873888,
+            "expanded": true,
+            "variable": null,
+            "children": [
+              {
+                "label": "mode ｜ 只读：0安全/1手动/2半自动/3自动预留",
+                "source_name": "s_fsm.mode",
+                "source_address": 536873888,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.mode",
+                  "variable_address": 536873888,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "step ｜ 只读：0空闲/9待发/10释放/12中止，完整表见说明",
+                "source_name": "s_fsm.step",
+                "source_address": 536873889,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.step",
+                  "variable_address": 536873889,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "energy ｜ 只读：0未知/1已释放/2已储能，软件推定",
+                "source_name": "s_fsm.energy",
+                "source_address": 536873898,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.energy",
+                  "variable_address": 536873898,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "shot_no ｜ 只读：下一发1~4；5表示空",
+                "source_name": "s_fsm.shot_no",
+                "source_address": 536873896,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.shot_no",
+                  "variable_address": 536873896,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "output_enabled ｜ 只读：1允许电机输出",
+                "source_name": "s_fsm.output_enabled",
+                "source_address": 536873900,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.output_enabled",
+                  "variable_address": 536873900,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "retreat_active ｜ 只读：1受控回退中",
+                "source_name": "s_fsm.retreat_active",
+                "source_address": 536873917,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.retreat_active",
+                  "variable_address": 536873917,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "unload_step ｜ 只读：0空闲/1降力/2快接近/3慢接住/4开锁/5送回",
+                "source_name": "s_fsm.unload_step",
+                "source_address": 536873924,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.unload_step",
+                  "variable_address": 536873924,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "last_fire_deny ｜ 只读：最近释放拒绝原因位图",
+                "source_name": "s_fsm.last_fire_deny",
+                "source_address": 536873904,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.last_fire_deny",
+                  "variable_address": 536873904,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "last_start_deny ｜ 只读：最近启动拒绝原因位图",
+                "source_name": "s_fsm.last_start_deny",
+                "source_address": 536873908,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.last_start_deny",
+                  "variable_address": 536873908,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "last_unload_deny ｜ 只读：最近卸力拒绝原因位图",
+                "source_name": "s_fsm.last_unload_deny",
+                "source_address": 536873932,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fsm.last_unload_deny",
+                  "variable_address": 536873932,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "s_fault_mask ｜ 只读：故障位图，完整位定义见使用说明",
+                "source_name": "s_fault_mask",
+                "source_address": 536870944,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_fault_mask",
+                  "variable_address": 536870944,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "s_trigger_state ｜ 只读：0锁止中/1锁止/2释放中/3释放",
+                "source_name": "s_trigger_state",
+                "source_address": 536871000,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_trigger_state",
+                  "variable_address": 536871000,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "03 Yaw轴 s_yaw_axis（按需勾选采集）",
+            "source_name": "s_yaw_axis",
+            "source_address": 536874508,
+            "expanded": false,
+            "variable": null,
+            "children": [
+              {
+                "label": "status ｜ 只读：0失能/1找零/2保持/3运动/4到位/5调速/6故障",
+                "source_name": "s_yaw_axis.status",
+                "source_address": 536874692,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.status",
+                  "variable_address": 536874692,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "err ｜ 只读：0无/1找零超时/2运动超时/3堵转/4离线",
+                "source_name": "s_yaw_axis.err",
+                "source_address": 536874693,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.err",
+                  "variable_address": 536874693,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "zeroed ｜ 只读：1零点有效，0需重新找零",
+                "source_name": "s_yaw_axis.zeroed",
+                "source_address": 536874694,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.zeroed",
+                  "variable_address": 536874694,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "pos ｜ 只读：逻辑当前位置 count",
+                "source_name": "s_yaw_axis.pos",
+                "source_address": 536874700,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.pos",
+                  "variable_address": 536874700,
+                  "variable_type": "I32",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "speed ｜ 只读：实际转速 rpm，逻辑方向",
+                "source_name": "s_yaw_axis.speed",
+                "source_address": 536874704,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.speed",
+                  "variable_address": 536874704,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "output ｜ 只读：电流指令 raw，不是安培",
+                "source_name": "s_yaw_axis.output",
+                "source_address": 536874736,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.output",
+                  "variable_address": 536874736,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "target ｜ 只读：固件当前目标 count；阶跃用上方pos_target",
+                "source_name": "s_yaw_axis.target",
+                "source_address": 536874708,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.target",
+                  "variable_address": 536874708,
+                  "variable_type": "I32",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "tune_speed ｜ 只读：速度调参模式目标 rpm",
+                "source_name": "s_yaw_axis.tune_speed",
+                "source_address": 536874728,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.tune_speed",
+                  "variable_address": 536874728,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "speed_limit ｜ 只读：本次位置运动限速 rpm",
+                "source_name": "s_yaw_axis.speed_limit",
+                "source_address": 536874732,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.speed_limit",
+                  "variable_address": 536874732,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "move_timeout ｜ 只读：本次自动计算运动超时 ms",
+                "source_name": "s_yaw_axis.move_timeout",
+                "source_address": 536874724,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_yaw_axis.move_timeout",
+                  "variable_address": 536874724,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "Yaw 回转位与软限位（RAM）",
+                "source_name": "s_yaw_axis",
+                "source_address": 536874508,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "home_pos ｜ 可写RAM：找零后回转位 count；非逐发预设",
+                    "source_name": "s_yaw_axis.home_pos",
+                    "source_address": 536874712,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.home_pos",
+                      "variable_address": 536874712,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "pos_min ｜ 可写RAM：软限位下限 count",
+                    "source_name": "s_yaw_axis.pos_min",
+                    "source_address": 536874716,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_min",
+                      "variable_address": 536874716,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "pos_max ｜ 可写RAM：软限位上限 count",
+                    "source_name": "s_yaw_axis.pos_max",
+                    "source_address": 536874720,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_max",
+                      "variable_address": 536874720,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "Yaw 速度内环 spd_pid",
+                "source_name": "s_yaw_axis.spd_pid",
+                "source_address": 536874572,
+                "expanded": true,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_yaw_axis.spd_pid.kp",
+                    "source_address": 536874588,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.spd_pid.kp",
+                      "variable_address": 536874588,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_yaw_axis.spd_pid.ki",
+                    "source_address": 536874592,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.spd_pid.ki",
+                      "variable_address": 536874592,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_yaw_axis.spd_pid.kd",
+                    "source_address": 536874596,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.spd_pid.kd",
+                      "variable_address": 536874596,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_yaw_axis.spd_pid.integral_max",
+                    "source_address": 536874624,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.spd_pid.integral_max",
+                      "variable_address": 536874624,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_yaw_axis.spd_pid.out_max",
+                    "source_address": 536874628,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.spd_pid.out_max",
+                      "variable_address": 536874628,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_yaw_axis.spd_pid.target",
+                    "source_address": 536874572,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.spd_pid.target",
+                      "variable_address": 536874572,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_yaw_axis.spd_pid.measure",
+                    "source_address": 536874576,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.spd_pid.measure",
+                      "variable_address": 536874576,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_yaw_axis.spd_pid.err",
+                    "source_address": 536874580,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.spd_pid.err",
+                      "variable_address": 536874580,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "Yaw 位置外环 pos_pid",
+                "source_name": "s_yaw_axis.pos_pid",
+                "source_address": 536874512,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_yaw_axis.pos_pid.kp",
+                    "source_address": 536874528,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_pid.kp",
+                      "variable_address": 536874528,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_yaw_axis.pos_pid.ki",
+                    "source_address": 536874532,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_pid.ki",
+                      "variable_address": 536874532,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_yaw_axis.pos_pid.kd",
+                    "source_address": 536874536,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_pid.kd",
+                      "variable_address": 536874536,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_yaw_axis.pos_pid.integral_max",
+                    "source_address": 536874564,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_pid.integral_max",
+                      "variable_address": 536874564,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_yaw_axis.pos_pid.out_max",
+                    "source_address": 536874568,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_pid.out_max",
+                      "variable_address": 536874568,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_yaw_axis.pos_pid.target",
+                    "source_address": 536874512,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_pid.target",
+                      "variable_address": 536874512,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_yaw_axis.pos_pid.measure",
+                    "source_address": 536874516,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_pid.measure",
+                      "variable_address": 536874516,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_yaw_axis.pos_pid.err",
+                    "source_address": 536874520,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.pos_pid.err",
+                      "variable_address": 536874520,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "Yaw 找零专用速度环 zero_pid",
+                "source_name": "s_yaw_axis.zero_pid",
+                "source_address": 536874632,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_yaw_axis.zero_pid.kp",
+                    "source_address": 536874648,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.zero_pid.kp",
+                      "variable_address": 536874648,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_yaw_axis.zero_pid.ki",
+                    "source_address": 536874652,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.zero_pid.ki",
+                      "variable_address": 536874652,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_yaw_axis.zero_pid.kd",
+                    "source_address": 536874656,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.zero_pid.kd",
+                      "variable_address": 536874656,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_yaw_axis.zero_pid.integral_max",
+                    "source_address": 536874684,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.zero_pid.integral_max",
+                      "variable_address": 536874684,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_yaw_axis.zero_pid.out_max",
+                    "source_address": 536874688,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.zero_pid.out_max",
+                      "variable_address": 536874688,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_yaw_axis.zero_pid.target",
+                    "source_address": 536874632,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.zero_pid.target",
+                      "variable_address": 536874632,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_yaw_axis.zero_pid.measure",
+                    "source_address": 536874636,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.zero_pid.measure",
+                      "variable_address": 536874636,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_yaw_axis.zero_pid.err",
+                    "source_address": 536874640,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_yaw_axis.zero_pid.err",
+                      "variable_address": 536874640,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "04 变力轴 s_tension_axis（按需勾选采集）",
+            "source_name": "s_tension_axis",
+            "source_address": 536874256,
+            "expanded": false,
+            "variable": null,
+            "children": [
+              {
+                "label": "status ｜ 只读：0失能/1找零/2保持/3运动/4到位/5调速/6故障",
+                "source_name": "s_tension_axis.status",
+                "source_address": 536874440,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.status",
+                  "variable_address": 536874440,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "err ｜ 只读：0无/1找零超时/2运动超时/3堵转/4离线",
+                "source_name": "s_tension_axis.err",
+                "source_address": 536874441,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.err",
+                  "variable_address": 536874441,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "zeroed ｜ 只读：1零点有效，0需重新找零",
+                "source_name": "s_tension_axis.zeroed",
+                "source_address": 536874442,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.zeroed",
+                  "variable_address": 536874442,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "pos ｜ 只读：逻辑当前位置 count",
+                "source_name": "s_tension_axis.pos",
+                "source_address": 536874448,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.pos",
+                  "variable_address": 536874448,
+                  "variable_type": "I32",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "speed ｜ 只读：实际转速 rpm，逻辑方向",
+                "source_name": "s_tension_axis.speed",
+                "source_address": 536874452,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.speed",
+                  "variable_address": 536874452,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "output ｜ 只读：电流指令 raw，不是安培",
+                "source_name": "s_tension_axis.output",
+                "source_address": 536874484,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.output",
+                  "variable_address": 536874484,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "target ｜ 只读：固件当前目标 count；阶跃用上方pos_target",
+                "source_name": "s_tension_axis.target",
+                "source_address": 536874456,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.target",
+                  "variable_address": 536874456,
+                  "variable_type": "I32",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "tune_speed ｜ 只读：速度调参模式目标 rpm",
+                "source_name": "s_tension_axis.tune_speed",
+                "source_address": 536874476,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.tune_speed",
+                  "variable_address": 536874476,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "speed_limit ｜ 只读：本次位置运动限速 rpm",
+                "source_name": "s_tension_axis.speed_limit",
+                "source_address": 536874480,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.speed_limit",
+                  "variable_address": 536874480,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "move_timeout ｜ 只读：本次自动计算运动超时 ms",
+                "source_name": "s_tension_axis.move_timeout",
+                "source_address": 536874472,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_tension_axis.move_timeout",
+                  "variable_address": 536874472,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": false,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "变力 回转位与软限位（RAM）",
+                "source_name": "s_tension_axis",
+                "source_address": 536874256,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "home_pos ｜ 可写RAM：找零后回转位 count；非逐发预设",
+                    "source_name": "s_tension_axis.home_pos",
+                    "source_address": 536874460,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.home_pos",
+                      "variable_address": 536874460,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "pos_min ｜ 可写RAM：软限位下限 count",
+                    "source_name": "s_tension_axis.pos_min",
+                    "source_address": 536874464,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_min",
+                      "variable_address": 536874464,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "pos_max ｜ 可写RAM：软限位上限 count",
+                    "source_name": "s_tension_axis.pos_max",
+                    "source_address": 536874468,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_max",
+                      "variable_address": 536874468,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "变力 速度内环 spd_pid",
+                "source_name": "s_tension_axis.spd_pid",
+                "source_address": 536874320,
+                "expanded": true,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_tension_axis.spd_pid.kp",
+                    "source_address": 536874336,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.spd_pid.kp",
+                      "variable_address": 536874336,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_tension_axis.spd_pid.ki",
+                    "source_address": 536874340,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.spd_pid.ki",
+                      "variable_address": 536874340,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_tension_axis.spd_pid.kd",
+                    "source_address": 536874344,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.spd_pid.kd",
+                      "variable_address": 536874344,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_tension_axis.spd_pid.integral_max",
+                    "source_address": 536874372,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.spd_pid.integral_max",
+                      "variable_address": 536874372,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_tension_axis.spd_pid.out_max",
+                    "source_address": 536874376,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.spd_pid.out_max",
+                      "variable_address": 536874376,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_tension_axis.spd_pid.target",
+                    "source_address": 536874320,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.spd_pid.target",
+                      "variable_address": 536874320,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_tension_axis.spd_pid.measure",
+                    "source_address": 536874324,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.spd_pid.measure",
+                      "variable_address": 536874324,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_tension_axis.spd_pid.err",
+                    "source_address": 536874328,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.spd_pid.err",
+                      "variable_address": 536874328,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "变力 位置外环 pos_pid",
+                "source_name": "s_tension_axis.pos_pid",
+                "source_address": 536874260,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_tension_axis.pos_pid.kp",
+                    "source_address": 536874276,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_pid.kp",
+                      "variable_address": 536874276,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_tension_axis.pos_pid.ki",
+                    "source_address": 536874280,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_pid.ki",
+                      "variable_address": 536874280,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_tension_axis.pos_pid.kd",
+                    "source_address": 536874284,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_pid.kd",
+                      "variable_address": 536874284,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_tension_axis.pos_pid.integral_max",
+                    "source_address": 536874312,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_pid.integral_max",
+                      "variable_address": 536874312,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_tension_axis.pos_pid.out_max",
+                    "source_address": 536874316,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_pid.out_max",
+                      "variable_address": 536874316,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_tension_axis.pos_pid.target",
+                    "source_address": 536874260,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_pid.target",
+                      "variable_address": 536874260,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_tension_axis.pos_pid.measure",
+                    "source_address": 536874264,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_pid.measure",
+                      "variable_address": 536874264,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_tension_axis.pos_pid.err",
+                    "source_address": 536874268,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.pos_pid.err",
+                      "variable_address": 536874268,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "变力 找零专用速度环 zero_pid",
+                "source_name": "s_tension_axis.zero_pid",
+                "source_address": 536874380,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_tension_axis.zero_pid.kp",
+                    "source_address": 536874396,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.zero_pid.kp",
+                      "variable_address": 536874396,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_tension_axis.zero_pid.ki",
+                    "source_address": 536874400,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.zero_pid.ki",
+                      "variable_address": 536874400,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_tension_axis.zero_pid.kd",
+                    "source_address": 536874404,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.zero_pid.kd",
+                      "variable_address": 536874404,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_tension_axis.zero_pid.integral_max",
+                    "source_address": 536874432,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.zero_pid.integral_max",
+                      "variable_address": 536874432,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_tension_axis.zero_pid.out_max",
+                    "source_address": 536874436,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.zero_pid.out_max",
+                      "variable_address": 536874436,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_tension_axis.zero_pid.target",
+                    "source_address": 536874380,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.zero_pid.target",
+                      "variable_address": 536874380,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_tension_axis.zero_pid.measure",
+                    "source_address": 536874384,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.zero_pid.measure",
+                      "variable_address": 536874384,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_tension_axis.zero_pid.err",
+                    "source_address": 536874388,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_tension_axis.zero_pid.err",
+                      "variable_address": 536874388,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "05 上膛轴 s_loader_axis（当前曲线对象）",
+            "source_name": "s_loader_axis",
+            "source_address": 536874004,
+            "expanded": true,
+            "variable": null,
+            "children": [
+              {
+                "label": "status ｜ 只读：0失能/1找零/2保持/3运动/4到位/5调速/6故障",
+                "source_name": "s_loader_axis.status",
+                "source_address": 536874188,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.status",
+                  "variable_address": 536874188,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "err ｜ 只读：0无/1找零超时/2运动超时/3堵转/4离线",
+                "source_name": "s_loader_axis.err",
+                "source_address": 536874189,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.err",
+                  "variable_address": 536874189,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "zeroed ｜ 只读：1零点有效，0需重新找零",
+                "source_name": "s_loader_axis.zeroed",
+                "source_address": 536874190,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.zeroed",
+                  "variable_address": 536874190,
+                  "variable_type": "U8",
+                  "variable_size": 1,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "pos ｜ 只读：逻辑当前位置 count",
+                "source_name": "s_loader_axis.pos",
+                "source_address": 536874196,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.pos",
+                  "variable_address": 536874196,
+                  "variable_type": "I32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "speed ｜ 只读：实际转速 rpm，逻辑方向",
+                "source_name": "s_loader_axis.speed",
+                "source_address": 536874200,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.speed",
+                  "variable_address": 536874200,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "output ｜ 只读：电流指令 raw，不是安培",
+                "source_name": "s_loader_axis.output",
+                "source_address": 536874232,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.output",
+                  "variable_address": 536874232,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "target ｜ 只读：固件当前目标 count；阶跃用上方pos_target",
+                "source_name": "s_loader_axis.target",
+                "source_address": 536874204,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.target",
+                  "variable_address": 536874204,
+                  "variable_type": "I32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "tune_speed ｜ 只读：速度调参模式目标 rpm",
+                "source_name": "s_loader_axis.tune_speed",
+                "source_address": 536874224,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.tune_speed",
+                  "variable_address": 536874224,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "speed_limit ｜ 只读：本次位置运动限速 rpm",
+                "source_name": "s_loader_axis.speed_limit",
+                "source_address": 536874228,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.speed_limit",
+                  "variable_address": 536874228,
+                  "variable_type": "Float",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "move_timeout ｜ 只读：本次自动计算运动超时 ms",
+                "source_name": "s_loader_axis.move_timeout",
+                "source_address": 536874220,
+                "expanded": true,
+                "variable": {
+                  "variable_name": "s_loader_axis.move_timeout",
+                  "variable_address": 536874220,
+                  "variable_type": "U32",
+                  "variable_size": 4,
+                  "enabled": true,
+                  "refresh_hz": 10
+                },
+                "children": []
+              },
+              {
+                "label": "上膛 回转位与软限位（RAM）",
+                "source_name": "s_loader_axis",
+                "source_address": 536874004,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "home_pos ｜ 可写RAM：找零后回转位 count；非逐发预设",
+                    "source_name": "s_loader_axis.home_pos",
+                    "source_address": 536874208,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.home_pos",
+                      "variable_address": 536874208,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "pos_min ｜ 可写RAM：软限位下限 count",
+                    "source_name": "s_loader_axis.pos_min",
+                    "source_address": 536874212,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_min",
+                      "variable_address": 536874212,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "pos_max ｜ 可写RAM：软限位上限 count",
+                    "source_name": "s_loader_axis.pos_max",
+                    "source_address": 536874216,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_max",
+                      "variable_address": 536874216,
+                      "variable_type": "I32",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "上膛 速度内环 spd_pid",
+                "source_name": "s_loader_axis.spd_pid",
+                "source_address": 536874068,
+                "expanded": true,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_loader_axis.spd_pid.kp",
+                    "source_address": 536874084,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.spd_pid.kp",
+                      "variable_address": 536874084,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_loader_axis.spd_pid.ki",
+                    "source_address": 536874088,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.spd_pid.ki",
+                      "variable_address": 536874088,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_loader_axis.spd_pid.kd",
+                    "source_address": 536874092,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.spd_pid.kd",
+                      "variable_address": 536874092,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_loader_axis.spd_pid.integral_max",
+                    "source_address": 536874120,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.spd_pid.integral_max",
+                      "variable_address": 536874120,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_loader_axis.spd_pid.out_max",
+                    "source_address": 536874124,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.spd_pid.out_max",
+                      "variable_address": 536874124,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_loader_axis.spd_pid.target",
+                    "source_address": 536874068,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.spd_pid.target",
+                      "variable_address": 536874068,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_loader_axis.spd_pid.measure",
+                    "source_address": 536874072,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.spd_pid.measure",
+                      "variable_address": 536874072,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_loader_axis.spd_pid.err",
+                    "source_address": 536874076,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.spd_pid.err",
+                      "variable_address": 536874076,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "上膛 位置外环 pos_pid",
+                "source_name": "s_loader_axis.pos_pid",
+                "source_address": 536874008,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_loader_axis.pos_pid.kp",
+                    "source_address": 536874024,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_pid.kp",
+                      "variable_address": 536874024,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_loader_axis.pos_pid.ki",
+                    "source_address": 536874028,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_pid.ki",
+                      "variable_address": 536874028,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_loader_axis.pos_pid.kd",
+                    "source_address": 536874032,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_pid.kd",
+                      "variable_address": 536874032,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_loader_axis.pos_pid.integral_max",
+                    "source_address": 536874060,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_pid.integral_max",
+                      "variable_address": 536874060,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": true,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_loader_axis.pos_pid.out_max",
+                    "source_address": 536874064,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_pid.out_max",
+                      "variable_address": 536874064,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_loader_axis.pos_pid.target",
+                    "source_address": 536874008,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_pid.target",
+                      "variable_address": 536874008,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_loader_axis.pos_pid.measure",
+                    "source_address": 536874012,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_pid.measure",
+                      "variable_address": 536874012,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_loader_axis.pos_pid.err",
+                    "source_address": 536874016,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.pos_pid.err",
+                      "variable_address": 536874016,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "上膛 找零专用速度环 zero_pid",
+                "source_name": "s_loader_axis.zero_pid",
+                "source_address": 536874128,
+                "expanded": false,
+                "variable": null,
+                "children": [
+                  {
+                    "label": "kp ｜ 可写RAM：比例系数",
+                    "source_name": "s_loader_axis.zero_pid.kp",
+                    "source_address": 536874144,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.zero_pid.kp",
+                      "variable_address": 536874144,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "ki ｜ 可写RAM：积分系数，按每次调用累加",
+                    "source_name": "s_loader_axis.zero_pid.ki",
+                    "source_address": 536874148,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.zero_pid.ki",
+                      "variable_address": 536874148,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "kd ｜ 可写RAM：微分系数，按每次调用差分",
+                    "source_name": "s_loader_axis.zero_pid.kd",
+                    "source_address": 536874152,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.zero_pid.kd",
+                      "variable_address": 536874152,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "integral_max ｜ 可写RAM：积分累加限幅，非输出限幅",
+                    "source_name": "s_loader_axis.zero_pid.integral_max",
+                    "source_address": 536874180,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.zero_pid.integral_max",
+                      "variable_address": 536874180,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "out_max ｜ 只读：运行时由固件重写；改它不会持久生效",
+                    "source_name": "s_loader_axis.zero_pid.out_max",
+                    "source_address": 536874184,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.zero_pid.out_max",
+                      "variable_address": 536874184,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "target ｜ 只读：本环目标，速度环rpm/位置环count",
+                    "source_name": "s_loader_axis.zero_pid.target",
+                    "source_address": 536874128,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.zero_pid.target",
+                      "variable_address": 536874128,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "measure ｜ 只读：本环反馈，速度环rpm/位置环count",
+                    "source_name": "s_loader_axis.zero_pid.measure",
+                    "source_address": 536874132,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.zero_pid.measure",
+                      "variable_address": 536874132,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  },
+                  {
+                    "label": "err ｜ 只读：本环误差",
+                    "source_name": "s_loader_axis.zero_pid.err",
+                    "source_address": 536874136,
+                    "expanded": true,
+                    "variable": {
+                      "variable_name": "s_loader_axis.zero_pid.err",
+                      "variable_address": 536874136,
+                      "variable_type": "Float",
+                      "variable_size": 4,
+                      "enabled": false,
+                      "refresh_hz": 5
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "show_svd": false,
+        "svd_path": null,
+        "svd_registers": []
+      }
+    },
+    {
+      "plugin_id": "debug",
+      "payload": {
+        "breakpoints": [],
+        "source_root_override": null,
+        "start_mode": "Attach",
+        "workspace_layout": {
+          "bottom_split_ratio": 0.550000011920929,
+          "call_stack_height": 140.0,
+          "code_split_ratio": 0.5,
+          "inspector_width": 280.0,
+          "navigator_width": 230.0
+        }
+      }
+    }
+  ]
+}

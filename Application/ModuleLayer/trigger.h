@@ -9,7 +9,7 @@
  * @attention
  *  WARNING: 滑台已锁止储能时调用 Trigger_Request_Release 即为发射。
  *  调用者只有三处：单发 FIRE 步骤(已过释放许可)、LOAD_PREP(已确认未储能)、
- *  MANUAL 模式人工切换。新增调用点必须同步更新 README 状态转移表。
+ *  MANUAL 模式人工切换。新增调用点必须同步更新 docs/状态机说明.md。
  *  无位置反馈，LOCKED/RELEASED 为按时间推定。
  *
  * Copyright 2026 RobotPilots

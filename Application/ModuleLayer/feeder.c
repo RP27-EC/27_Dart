@@ -8,7 +8,9 @@
  ******************************************************************************
  * @attention
  *  步骤表全部为占位值(脉宽相同 = 舵机不动)，机构方案与舵机选型确定后
- *  由人工标定填写。默认序列：放行一枚 -> 挡住 -> 剪叉托起 -> 剪叉回位。
+ *  由人工标定填写。默认序列(按用户 2026-11-04 描述)：限位放行 -> 镖靠重力
+ *  落到剪叉 -> 限位挡住 -> 两剪叉把镖放下 -> 剪叉回接镖位。
+ *  NOTE: 每次只放行一枚取决于放行保持时间和机构，舵机到货后需实测确认。
  *
  * Copyright 2026 RobotPilots
  ******************************************************************************
@@ -28,7 +30,7 @@
               FEEDER_STOP_PULSE_OPEN, FEEDER_STEP_HOLD_MS },                           \
             { FEEDER_LIFT_A_PULSE_HOME, FEEDER_LIFT_B_PULSE_HOME,                      \
               FEEDER_STOP_PULSE_LOCK, FEEDER_STEP_HOLD_MS },                           \
-            { FEEDER_LIFT_A_PULSE_UP,   FEEDER_LIFT_B_PULSE_UP,                        \
+            { FEEDER_LIFT_A_PULSE_DOWN, FEEDER_LIFT_B_PULSE_DOWN,                   \
               FEEDER_STOP_PULSE_LOCK, FEEDER_STEP_HOLD_MS },                           \
             { FEEDER_LIFT_A_PULSE_HOME, FEEDER_LIFT_B_PULSE_HOME,                      \
               FEEDER_STOP_PULSE_LOCK, FEEDER_STEP_HOLD_MS },                           \

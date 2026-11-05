@@ -45,6 +45,26 @@ typedef struct {
     uint32_t set_tick;          /* 本次下发时刻 ms */
 } servo_t;
 
+/* Exported macro ------------------------------------------------------------*/
+#define SERVO_DEBUG_ENABLE      (DART_TEST_MODE)   /* 调试接管随测试模式 */
+#define SERVO_DEBUG_RANGE_DEG   (270.0f)           /* 270° 舵机满行程 */
+
+/**
+ * @brief  调试器舵机接管块(Watch 窗口读写)
+ * @note   enable=1 时按 angle_deg 输出，覆盖状态机脉宽；写 0 恢复原脉宽。
+ *         换算：pulse = 500 + angle / 270 × 2000 µs，按 270° 舵机线性推定。
+ */
+typedef struct {
+    uint8_t  enable;                /* 写 1 接管，写 0 退出 */
+    float    angle_deg[SERVO_NUM];  /* 目标角 0~270° */
+    uint16_t pulse_us[SERVO_NUM];   /* 只读：实际输出 µs */
+} servo_debug_t;
+
+/* Exported variables --------------------------------------------------------*/
+#if SERVO_DEBUG_ENABLE
+extern volatile servo_debug_t g_servo_debug;
+#endif
+
 /* Exported functions --------------------------------------------------------*/
 void Servo_Init(void);
 void Servo_Set_Pulse(servo_id_e id, uint16_t pulse_us, uint32_t settle_ms, uint32_t now);

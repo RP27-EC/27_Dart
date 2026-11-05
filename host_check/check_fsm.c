@@ -199,6 +199,7 @@ static void Check_Direct_Release(void)
     }
     CHECK((Dart_Fsm_Get()->step == SHOT_IDLE) && (g_trigger == TRIGGER_LOCKED) &&
           (Dart_Fsm_Get()->energy == ENERGY_RELEASED), "一发结束应锁止且 RELEASED");
+    CHECK((g_link_sync_cnt == 1) && (g_link_sync_shot == 1U), "释放时应发出 1 次出镖同步，发序为 1");
     g_trigger_release_cnt = 0;
     Tick(RC_LEVER_UP, RC_LEVER_UP, RC_WHEEL_EVT_UP, 10U);
     CHECK((g_trigger_release_cnt == 1) && (Dart_Fsm_Get()->unload_step == UNLOAD_IDLE),

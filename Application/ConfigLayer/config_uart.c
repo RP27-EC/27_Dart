@@ -7,7 +7,8 @@
  * @date    2026-11-02
  ******************************************************************************
  * @attention
- *  USART1 -> 串口屏桩；USART3 -> DBUS 遥控；USART6 -> 裁判系统桩。
+ *  USART1 -> 2.4G(DART_LINK24G_ENABLE=1，测试)或串口屏桩；
+ *  USART3 -> DBUS 遥控；USART6 -> 裁判系统桩。
  *  全部运行在串口空闲中断上下文，只做解析/拷贝，不做控制。
  *
  * Copyright 2026 RobotPilots
@@ -23,16 +24,21 @@
 #include "drv_uart.h"
 #include "judge_protocol.h"
 #include "screen_protocol.h"
+#include "link24g_protocol.h"
 
 /* Exported functions --------------------------------------------------------*/
 /**
- * @brief  USART1 接收：串口屏
+ * @brief  USART1 接收：2.4G(测试)或串口屏，二者编译期互斥
  * @param  rxBuf DMA 缓冲
  * @param  len   本次实际收到字节数
  */
 void USART1_rxDataHandler(uint8_t *rxBuf, uint16_t len)
 {
+#if DART_LINK24G_ENABLE
+    Link24g_Rx(rxBuf, len);
+#else
     Screen_Rx(rxBuf, len);
+#endif
 }
 
 /**

@@ -45,6 +45,34 @@ static servo_t s_servo[SERVO_NUM] = {
     },
 };
 
+#if SERVO_DEBUG_ENABLE
+/* NOTE: 默认 135° 为 270° 舵机中位 */
+volatile servo_debug_t g_servo_debug = {
+    .enable    = 0U,
+    .angle_deg = {135.0f, 135.0f, 135.0f, 135.0f},
+};
+
+/**
+ * @brief  270° 舵机角度换算为脉宽
+ * @param  angle_deg 目标角度 °，超出 0~270 被限幅
+ * @retval 脉宽 µs，范围 DART_SERVO_PULSE_MIN~MAX
+ */
+static uint16_t Servo_Angle_To_Pulse(float angle_deg)
+{
+    float span_us = (float)(DART_SERVO_PULSE_MAX - DART_SERVO_PULSE_MIN);
+
+    /* NOTE: 取反写法同时把 NaN 限到 0° */
+    if (!(angle_deg > 0.0f)) {
+        angle_deg = 0.0f;
+    }
+    if (angle_deg > SERVO_DEBUG_RANGE_DEG) {
+        angle_deg = SERVO_DEBUG_RANGE_DEG;
+    }
+    return (uint16_t)((float)DART_SERVO_PULSE_MIN
+                      + angle_deg / SERVO_DEBUG_RANGE_DEG * span_us + 0.5f);
+}
+#endif
+
 /* Exported functions --------------------------------------------------------*/
 /**
  * @brief  舵机对象初始化并立即输出初始脉宽
@@ -126,12 +154,22 @@ uint16_t Servo_Get_Pulse(servo_id_e id)
  * @brief  把全部舵机当前脉宽写入 PWM
  * @param  无
  * @retval 无
+ * @note   测试模式下 g_servo_debug.enable=1 时改按调试角度输出，
+ *         只覆盖输出，不改 pulse_now，退出后立即恢复状态机脉宽。
  */
 void Servo_Output_All(void)
 {
-    uint8_t servo_index;
+    uint8_t  servo_index;
+    uint16_t pulse_us;
 
     for (servo_index = 0U; servo_index < (uint8_t)SERVO_NUM; servo_index++) {
-        PWM_Servo_Set_Pulse(s_servo[servo_index].ch, s_servo[servo_index].pulse_now);
+        pulse_us = s_servo[servo_index].pulse_now;
+#if SERVO_DEBUG_ENABLE
+        if (g_servo_debug.enable != 0U) {
+            pulse_us = Servo_Angle_To_Pulse(g_servo_debug.angle_deg[servo_index]);
+        }
+        g_servo_debug.pulse_us[servo_index] = pulse_us;
+#endif
+        PWM_Servo_Set_Pulse(s_servo[servo_index].ch, pulse_us);
     }
 }

@@ -48,9 +48,16 @@
 #define DART_JUDGE_ENABLE            (0)    /* 裁判系统 USART6 */
 #define DART_VISION_ENABLE           (0)    /* 小电脑 USB CDC */
 #define DART_SCREEN_ENABLE           (0)    /* 串口屏 USART1 */
-#define DART_LINK24G_ENABLE          (0)    /* 2.4G 基地同步 */
+#define DART_LINK24G_ENABLE          (1)    /* 2.4G 基地同步 USART1，仅测试 */
 #define DART_LOADCELL_ENABLE         (0)    /* 双路测力 ADS1232 */
 #define DART_TF_LOG_ENABLE           (0)    /* TF 卡日志 SPI2 */
+
+/* 2.4G 测试基地(DL20，USART1 115200) ------------------------------------*/
+#define LINK24G_RESEND_MS            (60U)  /* 未回执重发间隔 ms */
+#define LINK24G_MAX_TRIES            (15U)  /* 单条命令最多发送次数 */
+#define LINK24G_ONLINE_TIMEOUT_MS    (500U) /* 状态超时判离线 ms */
+#define LINK24G_TX_TIMEOUT_MS        (5U)   /* 单帧阻塞发送超时 ms */
+#define LINK24G_PING_PERIOD_MS       (200U) /* 空闲心跳周期 ms */
 
 /* 通用 ----------------------------------------------------------------------*/
 #define DART_SHOT_MAX                (4U)   /* 每局最多装 4 镖 */
@@ -83,11 +90,12 @@
 #define TRIGGER_PULSE_RELEASE        (880U)   /* 26 值：释放 */
 #define TRIGGER_SETTLE_MS            (300U)   /* 舵机动作等待 */
 
-/* 供弹舵机，待选型与标定(DS3225/DG995 候选) */
-#define FEEDER_LIFT_A_PULSE_HOME     (1500U)  /* 剪叉A 初始位 */
-#define FEEDER_LIFT_A_PULSE_UP       (1500U)  /* 剪叉A 托起位 */
-#define FEEDER_LIFT_B_PULSE_HOME     (1500U)  /* 剪叉B 初始位 */
-#define FEEDER_LIFT_B_PULSE_UP       (1500U)  /* 剪叉B 托起位 */
+/* 供弹舵机，待选型与标定(DS3225/DG995 候选)，尚未采购。
+ * NOTE: 动作顺序为限位放行、镖靠重力落到剪叉、限位挡住、剪叉放下、剪叉回接镖位。 */
+#define FEEDER_LIFT_A_PULSE_HOME     (1500U)  /* 剪叉A 接镖位(初始) */
+#define FEEDER_LIFT_A_PULSE_DOWN     (1500U)  /* 剪叉A 放镖位 */
+#define FEEDER_LIFT_B_PULSE_HOME     (1500U)  /* 剪叉B 接镖位(初始) */
+#define FEEDER_LIFT_B_PULSE_DOWN     (1500U)  /* 剪叉B 放镖位 */
 #define FEEDER_STOP_PULSE_LOCK       (1500U)  /* 限位 挡住 */
 #define FEEDER_STOP_PULSE_OPEN       (1500U)  /* 限位 放行 */
 #define FEEDER_STEP_HOLD_MS          (600U)   /* 每步保持时间 */
@@ -225,6 +233,12 @@
 /* 配置保护 ----------------------------------------------------------------*/
 #if (DART_TEST_MODE == 0) && (DART_JUDGE_ENABLE == 0)
 #error "正式配置(DART_TEST_MODE=0)必须先实现并启用裁判系统"
+#endif
+#if (DART_LINK24G_ENABLE != 0) && (DART_SCREEN_ENABLE != 0)
+#error "2.4G 与串口屏共用 USART1，不能同时启用"
+#endif
+#if (DART_LINK24G_ENABLE != 0) && (DART_TEST_MODE == 0)
+#error "2.4G 基地同步只用于测试，正式配置必须关闭"
 #endif
 
 /* Exported functions --------------------------------------------------------*/

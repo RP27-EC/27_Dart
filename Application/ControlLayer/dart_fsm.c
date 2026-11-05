@@ -7,7 +7,7 @@
  * @date    2026-11-02
  ******************************************************************************
  * @attention
- *  遥控映射见 README "遥控操作表"，修改映射必须同步 README。
+ *  遥控映射见 docs/遥控器手册.md，状态转移见 docs/状态机说明.md，修改时必须同步。
  *  本文件是三根轴、撒放器、供弹的唯一请求发起者(单一写者)。
  *
  * Copyright 2026 RobotPilots
@@ -277,7 +277,8 @@ static void Fsm_Try_Fire(bool confirm_ok, uint32_t now)
     s_fsm.shots_released++;
     (void)Log_Event(LOG_EVT_SHOT_RELEASED, (int32_t)s_fsm.shot_no);
 #if DART_LINK24G_ENABLE
-    (void)Link24g_Send_Base_Cmd(LINK24G_CMD_SYNC_SHOT, (int32_t)s_fsm.shot_no);
+    /* NOTE: 只入队，不阻塞控制周期；以释放命令时刻作为出镖计时起点 */
+    Link24g_Notify_Shot(s_fsm.shot_no);
 #endif
     s_fsm.step = SHOT_FIRING;
     s_fsm.step_tick = now;

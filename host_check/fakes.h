@@ -34,6 +34,8 @@ extern uint32_t        g_fault_mask;
 extern int             g_trigger_release_cnt;
 extern int             g_zero_req_cnt[3];      /* 上膛/变力/Yaw 找零请求次数 */
 extern int             g_tone_cnt[BUZZER_TONE_NUM]; /* 各提示音请求次数 */
+extern int             g_link_sync_cnt;        /* 2.4G 出镖同步次数 */
+extern uint8_t         g_link_sync_shot;       /* 最近同步的发序 */
 
 void Fakes_Reset(void);
 
